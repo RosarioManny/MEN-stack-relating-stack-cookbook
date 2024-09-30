@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1> Creating new recipe</h1>
-    <form action="/recipes/index.ejs" method="POST">
+    <form action="/recipes/" method="POST">
         <h2>Let's make a new recipe, <%= user.username %>!</h2>
             <label for="name" id="name">Recipe name: </label>
             <input type="text" name="name" id="name" required/>
@@ -21,7 +21,7 @@
                 <label for="name" id="name">Instructions </label>
                 <textarea type="text" name="name" id="name" required></textarea>
             </p>
-           
+            <button type="submit">Submit Recipe</button>
     </form>
 </body>
 </html>

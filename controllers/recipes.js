@@ -9,9 +9,14 @@ const Recipe = require('../models/recipes.js');
 module.exports = router;
 
 router.get('/', async (req, res) => {
+    // const userRecipe = require(recipe);
   res.render('recipes/index.ejs');
 });
 
 router.get("/new", (req, res) => {
     res.render("recipes/new.ejs")
 });
+
+router.post("/", (req, res) => {
+    res.render("recipes/index.ejs")
+}) 
