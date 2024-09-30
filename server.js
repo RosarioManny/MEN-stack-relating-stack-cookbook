@@ -60,6 +60,8 @@ app.get('/vip-lounge', (req, res) => {
 
 app.use('/auth', authController);
 
+app.use('/recipes', recipesController);
+
 // console.log(process.env.MONGODB_URI)
 
 app.listen(port, () => {
